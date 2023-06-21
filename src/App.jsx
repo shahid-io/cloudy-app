@@ -11,9 +11,16 @@ function App() {
     "India",
     "Punjab",
   ];
+  const handleSelectedItems = (city) => {
+    console.log(city);
+  };
   return (
     <div className="App">
-      <ListGroup cities={items} heading="Indian Cities" />
+      <ListGroup
+        cities={items}
+        heading="Indian Cities"
+        onSelectItems={handleSelectedItems}
+      />
     </div>
   );
 }
