@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./ListGroup.css";
+
 // Here instead of Interface, Object being used.
 /**
  * const Props = {
@@ -11,6 +12,7 @@ import "./ListGroup.css";
 
 function ListGroup(props) {
   const { cities, heading, onSelectItems } = props;
+  
   const getMessage = () => {
     return cities.length === 0 ? (
       <p className="text-danger m-5">*CITIES NOT FOUND</p>
