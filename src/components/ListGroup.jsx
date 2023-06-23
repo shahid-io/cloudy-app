@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./ListGroup.css";
 // Here instead of Interface, Object being used.
 /**
  * const Props = {
@@ -36,8 +36,8 @@ function ListGroup(props) {
           <li
             className={
               selectedIndex == index
-                ? "list-group-item w-25 mx-5 bg-dark text-light"
-                : "list-group-item w-25 mx-5 "
+                ? "list-group-item cur w-25 mx-5 bg-dark text-light"
+                : "list-group-item cur w-25 mx-5 "
             }
             key={index}
             onClick={() => {

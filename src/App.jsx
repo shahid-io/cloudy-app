@@ -1,3 +1,4 @@
+import { Alert } from "bootstrap";
 import ListGroup from "./components/ListGroup";
 function App() {
   let items = [
@@ -12,6 +13,7 @@ function App() {
     "Punjab",
   ];
   const handleSelectedItems = (city) => {
+    // alert(city)
     console.log(city);
   };
   return (
@@ -21,6 +23,10 @@ function App() {
         heading="Indian Cities"
         onSelectItems={handleSelectedItems}
       />
+      <Alert>
+        <span>Hello</span>
+      </Alert>
+
     </div>
   );
 }
