@@ -7,6 +7,7 @@ import Person from "./components/Person";
 import ShopApp from "./components/Shopping/ShopApp";
 import Employee from "./components/Employee/Employee";
 import Pizza from "./components/Pizza/Pizza";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   let items = [
@@ -52,6 +53,7 @@ function App() {
       <ShopApp />
       <Employee />
       <Pizza />
+      <Cart/>
     </div>
   );
 }
