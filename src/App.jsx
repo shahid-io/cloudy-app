@@ -2,6 +2,12 @@ import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
+import { GoAlert } from "react-icons/go";
+import Person from "./components/Person";
+import ShopApp from "./components/Shopping/ShopApp";
+import Employee from "./components/Employee/Employee";
+import Pizza from "./components/Pizza/Pizza";
+
 function App() {
   let items = [
     "Mumbai",
@@ -28,7 +34,10 @@ function App() {
       />
       {/* {alertVisible ? <Alert>Alert</Alert> : null} */}
       {alertVisible && (
-        <Alert onClose={() => setAlertVibility(false)}>Alert</Alert>
+        <Alert onClose={() => setAlertVibility(false)}>
+          <GoAlert size={20} color="red" />
+          <h5>Here we go</h5>
+        </Alert>
       )}
       <Button
         color="danger"
@@ -39,6 +48,10 @@ function App() {
       >
         Alert
       </Button>
+      <Person />
+      <ShopApp />
+      <Employee />
+      <Pizza />
     </div>
   );
 }

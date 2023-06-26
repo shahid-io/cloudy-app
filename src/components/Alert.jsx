@@ -4,7 +4,10 @@ const Alert = (props) => {
   const { children, onClose } = props;
   return (
     <div>
-      <div className="alert alert-success alert-dismissible show" role="alert">
+      <div
+        className="alert alert-success alert-dismissible show"
+        role="alert"
+      >
         {children}
         <button
           type="button"
